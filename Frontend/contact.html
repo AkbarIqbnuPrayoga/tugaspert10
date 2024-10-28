@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar with Shadow -->
+    <nav class="navbar navbar-dark border-body container-fluid d-flex justify-content-between align-items-center p-3 shadow" data-bs-theme="dark">
+        <ul class="list-unstyled mb-0 ms-3">
+            <li class="fs-4 fw-bold text-gradient" style="background: linear-gradient(to left, black, purple, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                Lifestyle Vibes
+            </li>
+        </ul>
+        <ul class="nav fs-6 me-3">
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="#">Contact</a>
+            </li>
+            <li class="nav-item fs-4">
+                <a class="btn btn-outline-dark" href="#subscribe" role="button">Subscribe</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="page-title py-5 bg-light">
+      <div class="container align-items-center">
+        <h1 class="mb-3 text-gradient fs-1 text-center fw-bold" style="font-family: cursive; background: linear-gradient(to right, black, purple, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          Contact Us
+      </h1>
+      <p class="text-center fs-5">We'd love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+      </div>
+    </div>
+      <div class="container mt-5">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Send Us A Message</h5>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Enter your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Message</label>
+                                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Type your message here" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" style="background: linear-gradient(to right, black, purple, blue); color: white;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="col-md-6">
+                <div id="map-container" class="mt-4">
+                    <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.4992948402902!2d106.79102829600674!3d-6.168719255323717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c8ffa044f%3A0x6f715cfa0b44194!2sFaculty%20of%20Information%20Technology!5e0!3m2!1sen!2sid!4v1729855961178!5m2!1sen!2sid" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk contact -->
+    <div class="modal fade" id="sendMessageModal" tabindex="-1" aria-labelledby="sendMessageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="sendMessageModalLabel">Message Sent</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                  <i class="fas fa-paper-plane fa-4x mb-2" style="color: #4CAF50;"></i>
+                  <p>Your message has been sent successfully! We will get back to you shortly.</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Subscription Section -->
+    <section id="subscription" class="container mt-5">
+        <h3 class="text-center" style="font-family: cursive;">Subscribe for Updates</h3>
+        <h3 class="text-center fs-6" style="font-family: cursive;">Get the latest news and tips on healthy eating, Fitness and nutrition directly to your inbox.</h3>
+        <div class="row justify-content-center mt-4">
+            <!-- Subscription Form -->
+            <div class="col-md-6 mb-4" id="subscribe">
+                <div class="card p-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Subscribe to Our Newsletter</h5>
+                        <form id="subscriptionForm" onsubmit="showThankYouModal(); return false;">
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="name" class="form-control" id="nameInput" placeholder="Enter your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required>
+                            </div>
+                            <button type="submit" class="btn w-100" style="background: linear-gradient(to right, black, purple, blue); color: white;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Form -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Example</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleName" class="form-label">Name</label>
+                                <input type="name" class="form-control" id="exampleName" placeholder="Akbar Iqbnu" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleEmail" placeholder="akbar.535230095@stu.untar.ac.id" disabled>
+                                <br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Subscription Successful</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-heart fa-4x mb-2" style="color: #ff6b6b;"></i>
+                    <p>Terima kasih telah melakukan subscribe! Anda akan menerima berita terbaru dari kami.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-5 mt-5">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-4">
+                  <h5 class="fw-bold">Lifestyle Vibes</h5>
+                  <p class="text-muted">Your source for health, wellness, and lifestyle tips.</p>
+              </div>
+              <div class="col-md-4">
+                  <h5 class="fw-bold">Contact</h5>
+                  <p class="text-muted">
+                      <a href="mailto:example@example.com" class="text-decoration-none text-black">akbar.535230095@stu.untar.ac.id</a><br>
+                      <a href="tel:+123456789" class="text-decoration-none text-black">+62 857 3108 8205</a>
+                  </p>
+              </div>
+              <div class="col-md-4">
+                  <h5 class="fw-bold">Follow Us</h5>
+                  <a href="#" class="text-decoration-none text-black me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                  <a href="#" class="text-decoration-none text-black me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                  <a href="#" class="text-decoration-none text-black"><i class="fab fa-instagram fa-lg"></i></a>
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col text-center">
+                  <small class="text-muted">
+                      &copy; 2024 Lifestyle Vibes | All Rights Reserved
+                  </small>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

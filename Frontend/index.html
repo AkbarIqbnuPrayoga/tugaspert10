@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <style>
+        .fashion-card .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .fashion-card .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .fade-up {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .fade-up:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar with Shadow -->
+    <nav class="navbar navbar-dark border-body container-fluid d-flex justify-content-between align-items-center p-3 shadow" data-bs-theme="dark">
+        <ul class="list-unstyled mb-0 ms-3">
+        <li class="fs-4 fw-bold text-gradient" style="background: linear-gradient(to left, black, purple, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Lifestyle Vibes
+        </li>
+        </ul>
+        <ul class="nav fs-6 me-3">
+        <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="#Lifestyle">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item fs-4">
+            <a class="btn btn-outline-dark" href="#subscribe" role="button">Subscribe</a>
+        </li>
+        </ul>
+    </nav>
+
+    <!-- Welcome -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="max-height: 700px;">
+          <div class="carousel-item active">
+            <img src="../assets/home.jpg" class="d-block w-100" alt="Lifestyle1" style="height: 100%; object-fit: cover;" />
+            <div class="carousel-caption position-absolute top-50 start-20 translate-middle-y text-start ps-4">
+              <h1 class="display-4 fw-bold text-white">Welcome to</h1>
+              <h2 class="display-3 fw-bold text-white" style="font-family: cursive;">Lifestyle Vibes</h2>
+              <p class="lead text-white">Explore trends, wellness, and living your best life</p>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+    <!-- Lifestyle Vibse-->
+    <div class="container my-5 text-center" id="Lifestyle">
+        <h1 class="display-4 fw-bold mb-4" style="font-family: cursive;">Lifestyle Vibes</h1>
+        <p class="lead fs-4" style="font-family: Poopins;">
+          Welcome to a space where lifestyle meets inspiration. Here, we celebrate the little joys, the big dreams, and everything in between that makes life beautiful.
+          Whether you're looking for fresh ideas, a dose of motivation, or just a cozy place to unwind, you've come to the right spot. Let’s explore the essence of lifestyle vibes together!
+        </p>
+    </div>
+
+    <!-- Categories -->
+    <section id="about" class="container mt-5">
+        <div class="row">
+        <!-- Wellness Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card position-relative shadow rounded-4 fade-up" style="background-color: #ffeaea; border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(138, 43, 226, 0.5), 0 10px 30px rgba(0, 0, 255, 0.4);">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="z-index: 1;">
+                New
+                <span class="visually-hidden">new content</span>
+            </span>
+            <a class="text-decoration-none text-black" href="#LifestyleWellness">
+            <div class="card-body text-center ">
+                <i class="fas fa-heart fa-2x mb-2" style="color: #ff6b6b;"></i>
+                <h5 class="card-title">Lifestyle in Wellness</h5>
+                <p class="card-text">Explore essential practices to enhance mental and physical health.</p>
+                <p class="card-text"><small class="text-body-secondary">Updated recently</small></p>
+            </div>
+            <img src="../assets/wellness.jpg" class="card-img-bottom rounded-bottom" alt="Wellness" />
+            </div>
+        </a>
+        </div>
+    
+        <!-- Fashion Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card position-relative shadow rounded-4 fade-up" style="background-color: #e6f3ff; border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(138, 43, 226, 0.5), 0 10px 30px rgba(0, 0, 255, 0.4);">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="z-index: 1;">
+                New
+                <span class="visually-hidden">new content</span>
+            </span>
+            <a class="text-decoration-none text-black" href="#LifestyleFashion">
+            <div class="card-body text-center">
+                <i class="fas fa-tshirt fa-2x mb-2" style="color: #6c757d;"></i>
+                <h5 class="card-title">Lifestyle in Fashion</h5>
+                <p class="card-text">Get inspired with the latest styles and timeless looks for every season.</p>
+                <p class="card-text"><small class="text-body-secondary">Updated 3 mins ago</small></p>
+            </div>
+            <img src="../assets/fashion.jpg" class="card-img-bottom rounded-bottom" alt="Fashion" />
+            </div>
+        </a>
+        </div>
+    
+        <!-- Food Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card position-relative shadow rounded-4 fade-up" style="background-color: #fff8e6; border: none; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(138, 43, 226, 0.5), 0 10px 30px rgba(0, 0, 255, 0.4);">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="z-index: 1;">
+                New
+                <span class="visually-hidden">new content</span>
+            </span>
+            <a class="text-decoration-none text-black" href="#LifestyleFood">
+            <div class="card-body text-center">
+                <i class="fas fa-utensils fa-2x mb-2" style="color: #ffc107;"></i>
+                <h5 class="card-title">Lifestyle in Food Healthy</h5>
+                <p class="card-text">Discover delicious, nutritious recipes to fuel your best self.</p>
+                <p class="card-text"><small class="text-body-secondary">Updated 12 mins ago</small></p>
+            </div>
+            <img src="../assets/food.jpg" class="card-img-bottom rounded-bottom" alt="Food Healthy" />
+            </div>
+        </a>
+        </div>
+        </div>
+    </section>
+  
+
+    <!-- Wellness -->
+    <section class="mb-7 mt-5">
+    <h3 class="text-center" style="font-family: cursive;" id="LifestyleWellness">Lifestyle in Wellness</h3>
+    <h3 class="text-center fs-6 mb-4">Explore essential practices to enhance mental and physical health.</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <!-- Wellness Carousel -->
+            <div id="wellnessCarousel" class="carousel slide mt-6" data-bs-ride="carousel">
+                <div class="carousel-inner" style="max-height: 480px;">
+                    <div class="carousel-item active">
+                        <img src="../assets/meditation.jpg" class="d-block w-100" alt="meditation" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Meditation Techniques</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/food_3.jpg" class="d-block w-100" alt="food_3" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nutrition Guides</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/wellness3.jpg" class="d-block w-100" alt="Wellness 3" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Self-Care Routines</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/wellness2.jpg" class="d-block w-100" alt="Wellness 2" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Physical Fitness</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/stress_management.jpg" class="d-block w-100" alt="stress_management" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Stress Management</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/sleep.jpg" class="d-block w-100" alt="sleep" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sleep Hygiene</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/mindfullnes.jpg" class="d-block w-100" alt="mindfulness" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mindfulness Practices</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/relationship.jpg" class="d-block w-100" alt="relationship" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Healthy Relationships</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#wellnessCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#wellnessCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+            <!-- Accordian Posisi Kanan  -->
+            <div class="col-md-6 mt-6">
+                <div class="accordion" id="wellnessAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Meditation Techniques
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Learn simple techniques to bring peace and calm into your daily life through meditation.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Nutrition Guides
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Discover healthy eating habits and meal plans to maintain a balanced diet.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Self-Care Routines
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Tips and tricks to make self-care a priority in your busy schedule for improved mental health.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Physical Fitness
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Engage in regular physical activity with tailored workouts that suit your lifestyle.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Stress Management
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Techniques and strategies for managing stress effectively in your daily life.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Sleep Hygiene
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Understanding the importance of quality sleep and how to establish a healthy sleep routine.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Mindfulness Practices
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Explore various mindfulness exercises to enhance your focus and present-moment awareness.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Healthy Relationships
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#wellnessAccordion">
+                            <div class="accordion-body">
+                                Tips for fostering positive relationships that support your wellness journey.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle in Fashion -->
+    <section id="fashion" class="container mt-5">
+        <h3 class="text-center" style="font-family: cursive;" id="LifestyleFashion">Lifestyle in Fashion</h3>
+        <h3 class="text-center fs-6" style="font-family: cursive;">Get inspired with the latest styles and timeless looks for every season.  </h3>
+        <div class="row" id="fashionCards">
+
+        <!-- Pagination -->
+        <nav aria-label="Fashion pagination">
+            <ul class="pagination justify-content-center mt-4">
+            <li class="page-item disabled" id="prevPage">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#" id="page1">1</a></li>
+            <li class="page-item"><a class="page-link" href="#" id="page2">2</a></li>
+            <li class="page-item" id="nextPage">
+                <a class="page-link" href="#">Next</a>
+            </li>
+            </ul>
+        </nav>
+
+        <!-- Card -->
+        <div class="col-md-4 mb-4 fashion-card">
+            <div class="card">
+            <img src="../assets/Fashion1.webp" class="card-img-top" alt="Fashion 1">
+            <div class="card-body">
+                <h5 class="card-title">Fashion's Fall 2024 Color Trends Went Viral</h5>
+                <p class="card-text">Bright blue is dominating the runway this fall, 
+                    showcased by major designers like Gucci and Prada. 
+                    This vibrant color is seen as a playful addition to collections, 
+                    with key pieces featuring bright hues.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 fashion-card">
+            <div class="card">
+            <img src="../assets/Fashion2.jpeg" class="card-img-top" alt="Fashion 2">
+            <div class="card-body">
+                <h5 class="card-title">IN2MF 2024 Realizes Goals with More Structured Collaboration</h5>
+                <p class="card-text"> Indonesia International Modest Fashion Festival (IN2MF) carries the theme Elevating Sustainable Modest Fashion to the Global Stage. 
+                    Therefore, programs that can increase collaboration with various parties are increasingly being intensified.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 fashion-card">
+            <div class="card">
+            <img src="../assets/Fashion3.png" class="card-img-top" alt="Fashion 3">
+            <div class="card-body">
+                <h5 class="card-title">Drives Acceleration of Modest Fashion Sector Development in Indonesia</h5>
+                <p class="card-text">IN2MF is a form of contribution, collaboration and synergy from various parties to realize Indonesia's vision of becoming a  world center for high-quality modest fashion .</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 fashion-card">
+            <div class="card">
+            <img src="../assets/Fashion4.png" class="card-img-top" alt="Fashion 4">
+            <div class="card-body">
+                <h5 class="card-title">The Stud, Temma Prasetio's Way of Educating Men to Look Stylish Without Being Overdone</h5>
+                <p class="card-text">Like women, men also have the right to dress up to the max. However, not all have the courage to explore their style. 
+                    Designer Temma Prasetio provides options for those who want to look stylish without being excessive.</p>
+            </div>
+            </div>
+        </div>  
+        <div class="col-md-4 mb-4 fashion-card">
+            <div class="card" >
+            <img src="../assets/Fashion5.png" class="card-img-top" alt="Fashion 5">
+            <div class="card-body">
+                <h5 class="card-title">Streetwear, Street Fashion Style Predicted to Boom in 2025</h5>
+                <p class="card-text">In the ever-evolving world of fashion, there is one trend that is predicted to dominate the global fashion stage in 2024: 
+                    streetwear. The style that was once only known as an expression of urban youth, 
+                    is now a fashion phenomenon that dominates the runway and everyday appearance.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 fashion-card">
+            <div class="card" >
+            <img src="../assets/Fashion6.png" class="card-img-top" alt="Fashion 6">
+            <div class="card-body">
+                <h5 class="card-title">This is the 2024 Fashion Trend from South Korea, NewJeans Becomes a Fashion Icon</h5>
+                <p class="card-text">South Korean culture has a significant influence on the development of fashion trends in Indonesia. Indonesian people's interest in K-pop products and styles is inseparable from the K-wave phenomenon that began in the 1900s until now.
+                    K-trend for short, is also predicted to increase in 2024</p>
+            </div>
+            </div>
+        </div>
+        <!-- End Card -->
+        </div>
+    </section>
+
+    <!-- Lifestyle in Food Nutrition -->
+    <section id="food-nutrition" class="container mt-5">
+        <h3 class="text-center" style="font-family: cursive;" id="LifestyleFood">Lifestyle in Food Nutrition</h3>
+        <h3 class="text-center fs-6 mb-4" style="font-family: cursive;">Discover delicious, nutritious recipes to fuel your best self.</h3>
+        <div class="row" id="nutritionCards">
+        
+            <!-- Video -->
+            <div class="col-md-4 mb-4 fade-up">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/fqhYBTg73fw" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">"What's the Best Diet? Healthy Eating 101"</h5>
+                        <p class="card-text">The Centre for Child Nutrition, Health and Development (CCNHD) unites top talent and resources to address key nutrition-related health issues affecting children and families in Canada and globally. We are a network of University of Toronto researchers and educators dedicated to children.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 fade-up">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/yTNN_0j5S2Q" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">"Healthy eating for beginners: how to eat healthy in 2024! Best tips from a nutritionist."</h5>
+                        <p class="card-text">Navigating nutrition can be overwhelming due to the abundance of conflicting information. For beginners, it's essential to focus on basic principles that promote health and well-being.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 fade-up">
+                <div class="card">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/HAmeeWuQWx0" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">"Top 10 Morning Foods You Should Eat Every Day"</h5>
+                        <p class="card-text">
+                            Start your day with nutritious options like eggs, oatmeal, berries, and Greek yogurt for a protein boost, fiber, and essential nutrients. Pair with coffee for added antioxidants and energy, supporting your health and weight management.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Video End -->
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section id="subscription" class="container mt-5">
+        <h3 class="text-center" style="font-family: cursive;">Subscribe for Updates</h3>
+        <h3 class="text-center fs-6" style="font-family: cursive;">Get the latest news and tips on healthy eating, Fitness and nutrition directly to your inbox.</h3>
+        <div class="row justify-content-center mt-4">
+
+            <!-- Subscription Form -->
+            <div class="col-md-6 mb-4" id="subscribe">
+                <div class="card p-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Subscribe to Our Newsletter</h5>
+                        <form id="subscriptionForm" onsubmit="showThankYouModal(); return false;">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="name" class="form-control" id="nameInput" placeholder="Enter your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required>
+                            </div>
+                            <button type="submit" class="btn w-100" style="background: linear-gradient(to right, black, purple, blue); color: white;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Form -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Example</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleName" class="form-label">Name</label>
+                                <input type="name" class="form-control" id="exampleName" placeholder="Akbar Iqbnu" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleEmail" placeholder="akbar.535230095@stu.untar.ac.id" disabled>
+                                <br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Subscription Successful</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-heart fa-4x mb-2" style="color: #ff6b6b;"></i>
+                    <p>Terima kasih telah melakukan subscribe! Anda akan menerima berita terbaru dari kami.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Lifestyle Vibes</h5>
+                    <p class="text-muted">Your source for health, wellness, and lifestyle tips.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p class="text-muted">
+                        <a href="mailto:example@example.com" class="text-decoration-none text-black">akbar.535230095@stu.untar.ac.id</a><br>
+                        <a href="tel:+123456789" class="text-decoration-none text-black">+62 857 3108 8205</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Follow Us</h5>
+                    <a href="#" class="text-decoration-none text-black me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-decoration-none text-black me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-decoration-none text-black"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <small class="text-muted">
+                        &copy; 2024 Lifestyle Vibes | All Rights Reserved
+                    </small>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+    <!-- Bootstrap JS and JS-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
